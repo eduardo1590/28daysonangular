@@ -8,6 +8,6 @@
 
 <div *ngIf="selection">
   <p>Your city is: {{selection}}</p>
-  <button (click)="onClear()">Clear</button>
+  <app-button (click)="onClear()" [color]="'blue'" [label]="'Clear'" [selection]="selection"></app-button>
 </div>
 <router-outlet></router-outlet>
